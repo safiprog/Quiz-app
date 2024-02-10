@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1a2231</color>
+    <color name="yellowApp">#b8e733</color>
+    <color name="cardColor">#3a5244</color>
+    <color name="progressColor">#313a45</color>
+</resources>
