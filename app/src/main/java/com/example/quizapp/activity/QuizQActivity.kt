@@ -29,70 +29,81 @@ class QuizQActivity : AppCompatActivity() {
         ).get(QuiqViewModel::class.java)
 
         viewModel.getJsonData()
-        Log.d("hero2",viewModel.ListOf10Mcq.size.toString())
+        Log.d("hero2", viewModel.ListOf10Mcq.size.toString())
         updateQuestion()
         binding.NextBtn.setOnClickListener {
 
-            radioBtnHandle()
-            updateQuestion()
+            val temp = radioBtnHandle()
+            if (temp) {
+                updateQuestion()
 
-            binding.radioGroup.clearCheck()
+                binding.radioGroup.clearCheck()
+            } else {
+                Toast.makeText(this, "Please Select Answer ", Toast.LENGTH_SHORT).show()
+            }
+
         }
         timer()
 
 
-
     }
+
     override fun onBackPressed() {
         showExitConfirmationDialog(this)
     }
-    private fun radioBtnHandle(){
-        if (binding.option1.isChecked){
+
+    private fun radioBtnHandle(): Boolean {
+        var temp = false
+        if (binding.option1.isChecked) {
             viewModel.ListOfUserAns.add("a")
-        }else if (binding.option2.isChecked){
+            temp = true
+        } else if (binding.option2.isChecked) {
             viewModel.ListOfUserAns.add("b")
-        }else if(binding.option3.isChecked){
+            temp = true
+        } else if (binding.option3.isChecked) {
             viewModel.ListOfUserAns.add("c")
-        }else{
+            temp = true
+        } else if (binding.option4.isChecked) {
             viewModel.ListOfUserAns.add("d")
+            temp = true
         }
+        return temp
     }
 
-     private fun passResult(){
+    private fun passResult() {
 
-         val intent=Intent(this,ResultActivity::class.java)
-         Log.d("hero","checker ${viewModel.ListOfUserAns.toString()}")
+        val intent = Intent(this, ResultActivity::class.java)
+        Log.d("hero", "checker ${viewModel.ListOfUserAns.toString()}")
 
-         intent.putExtra("userans",viewModel.ListOfUserAns)
+        intent.putExtra("userans", viewModel.ListOfUserAns)
 
 
-         intent.putExtra("mcq",viewModel.ListOf10Mcq)
-         startActivity(intent)
-         finish()
-     }
+        intent.putExtra("mcq", viewModel.ListOf10Mcq)
+        startActivity(intent)
+        finish()
+    }
+
     private fun updateQuestion() {
 
 
+        if (viewModel.question_no < viewModel.ListOf10Mcq.size) {
+            val temp = viewModel.ListOf10Mcq[viewModel.question_no]
+            binding.question.text = temp.question
+            binding.QuestionNO.text = "Question ${viewModel.question_no + 1}"
+            binding.option1.text = temp.a
+            binding.option2.text = temp.b
+            binding.option3.text = temp.c
+            binding.option4.text = temp.d
 
-        if (viewModel.question_no<viewModel.ListOf10Mcq.size){
-            val temp=viewModel.ListOf10Mcq[viewModel.question_no]
-            binding.question.text=temp.question
-            binding.QuestionNO.text="Question ${viewModel.question_no+1}"
-            binding.option1.text=temp.a
-            binding.option2.text=temp.b
-            binding.option3.text=temp.c
-            binding.option4.text=temp.d
-
-        }else{
-            Log.d("hero",viewModel.ListOfUserAns.toString())
+        } else {
+            Log.d("hero", viewModel.ListOfUserAns.toString())
             passResult()
         }
-        viewModel.question_no+=1
+        viewModel.question_no += 1
     }
 
 
-
-    private fun timer(){
+    private fun timer() {
         val countDownTimer = object : CountDownTimer(totalTimeInMillis, 1000) {
 
             override fun onTick(millisUntilFinished: Long) {
@@ -110,14 +121,13 @@ class QuizQActivity : AppCompatActivity() {
     }
 
 
-
     private fun updateTimer(millisUntilFinished: Long) {
-        val secondRemaining=millisUntilFinished/1000
+        val secondRemaining = millisUntilFinished / 1000
         val minutes = (millisUntilFinished / 1000) / 60
         val seconds = (millisUntilFinished / 1000) % 60
         val timeFormatted = String.format("%02d:%02d", minutes, seconds)
         binding.timer.text = " $timeFormatted"
-        binding.progressBar.progress=(5*60 - secondRemaining).toInt()
+        binding.progressBar.progress = (10 * 50 - secondRemaining).toInt()
     }
 
     fun showExitConfirmationDialog(context: Context) {
@@ -133,5 +143,14 @@ class QuizQActivity : AppCompatActivity() {
             dialog.dismiss()
         }
         builder.create().show()
+    }
+
+
+
+    fun saveData(){
+        val editor=getSharedPreferences("My_Satting", MODE_PRIVATE).edit()
+        editor.putString("userAns",viewModel.ListOfUserAns.toString())
+        editor.putString("mcq_question",viewModel.ListOf10Mcq.toString())
+        editor.apply()
     }
 }
