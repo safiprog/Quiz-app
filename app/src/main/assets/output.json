@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "What is an OS based on Linux developed for mobiles?",
+    "a": "DOS",
+    "b": "Android",
+    "c": "Microsoft Windows",
+    "d": "Ubuntu",
+    "key": "Android"
+  },
+  {
+    "id": 2,
+    "question": "What provides the unique method for the development of applications in mobiles?",
+    "a": "DOS",
+    "b": "Android",
+    "c": "Microsoft Windows",
+    "d": "Ubuntu",
+    "key": "Android"
+  },
+  {
+    "id": 3,
+    "question": "Beta version of Android was first developed by _____________?",
+    "a": "Google",
+    "b": "HTC",
+    "c": "Microsoft Window",
+    "d": "Opera",
+    "key": "HTC"
+  },
+  {
+    "id": 4,
+    "question": "What is AOSP?",
+    "a": "Android Open-Source Project",
+    "b": "Android Organized Simulation Project",
+    "c": "Android Organization Synchronized Propagation",
+    "d": "Accumulation-Oriented Synchronized Project",
+    "key": "Android Open-Source Project"
+  },
+  {
+    "id": 5,
+    "question": "What in Android is based upon manipulating directly?",
+    "a": "Home Screen",
+    "b": "Status Bar",
+    "c": "Interface",
+    "d": "App Lists",
+    "key": "Interface"
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of the interface in Android?",
+    "a": "Swiping",
+    "b": "Tapping",
+    "c": "Pinching",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 7,
+    "question": "Full-size keyboards i.e., physical in Androids can be supported via ____________?",
+    "a": "Bluetooth",
+    "b": "USB",
+    "c": "Wi-fi",
+    "d": "Either a or b",
+    "key": "Either a or b"
+  },
+  {
+    "id": 8,
+    "question": "What is FOSS?",
+    "a": "Free and Open-source Software",
+    "b": "Flexible and Oriented Space software",
+    "c": "Free and Oriented Space Synchronization",
+    "d": "Fast and Organized Space Software",
+    "key": "Free and Open-source Software"
+  },
+  {
+    "id": 9,
+    "question": "What is the hub of information in devices of Android?",
+    "a": "Home Screen",
+    "b": "Status Bar",
+    "c": "Interface",
+    "d": "App Lists",
+    "key": "Home Screen"
+  },
+  {
+    "id": 10,
+    "question": "Devices of Android boots to __________?",
+    "a": "Home Screen",
+    "b": "Status Bar",
+    "c": "Interface",
+    "d": "App Lists",
+    "key": "Home Screen"
+  },
+  {
+    "id": 11,
+    "question": "What does a home screen in Android consist of?",
+    "a": "App Icons",
+    "b": "Widgets",
+    "c": "a & b",
+    "d": "None",
+    "key": "a & b"
+  },
+  {
+    "id": 12,
+    "question": "What launches are the applications associated with?",
+    "a": "App Icons",
+    "b": "Widgets",
+    "c": "a & b",
+    "d": "None",
+    "key": "App Icons"
+  },
+  {
+    "id": 13,
+    "question": "What Android devices are used in displaying Weather forecasts?",
+    "a": "App Icons",
+    "b": "Widgets",
+    "c": "Interface",
+    "d": "None",
+    "key": "Widgets"
+  },
+  {
+    "id": 14,
+    "question": "What deals with screen adjustments in Androids?",
+    "a": "Home Screen",
+    "b": "Status Bar",
+    "c": "Interface",
+    "d": "App Lists",
+    "key": "Interface"
+  },
+  {
+    "id": 15,
+    "question": "What shows the device information in Android?",
+    "a": "Home Screen",
+    "b": "Status Bar",
+    "c": "Interface",
+    "d": "App Lists",
+    "key": "Interface"
+  },
+  {
+    "id": 16,
+    "question": "What is Android?",
+    "a": "Operating System",
+    "b": "Server",
+    "c": "Client",
+    "d": "Browser",
+    "key": "Operating System"
+  },
+  {
+    "id": 17,
+    "question": "Why Android developed is Linux based?",
+    "a": "Security",
+    "b": "Networking",
+    "c": "Portability",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 18,
+    "question": "Android OS use __________virtual machine?",
+    "a": "Simple Virtual Machine",
+    "b": "Java Virtual Machine",
+    "c": "Dalvik Virtual Machine",
+    "d": "C Virtual Machine",
+    "key": "Dalvik Virtual Machine"
+  },
+  {
+    "id": 19,
+    "question": "In ________ executable is APK?",
+    "a": "Simple Virtual Machine",
+    "b": "Java Virtual Machine",
+    "c": "Dalvik Virtual Machine",
+    "d": "C Virtual Machine",
+    "key": "Dalvik Virtual Machine"
+  },
+  {
+    "id": 20,
+    "question": "What displays the updated information?",
+    "a": "Home Screen",
+    "b": "Status Bar",
+    "c": "Interface",
+    "d": "App Lists",
+    "key": "Status Bar"
+  },
+  {
+    "id": 21,
+    "question": "What is the purpose of DVM in Androids?",
+    "a": "Optimizing Virtual Machines Memory",
+    "b": "Optimizing Battery Life",
+    "c": "Optimizing Device Performance",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 22,
+    "question": "What converts the files of the class into .dex files?",
+    "a": "Simple Virtual Machine",
+    "b": "Java Virtual Machine",
+    "c": "Dalvik Virtual Machine",
+    "d": "C Virtual Machine",
+    "key": "Dalvik Virtual Machine"
+  },
+  {
+    "id": 23,
+    "question": "What does .odex mean?",
+    "a": "Optimized Dalvik Executable",
+    "b": "Organized Dos Files Executable",
+    "c": "Organized Distributed Executable",
+    "d": "Optimized Direct Encoded",
+    "key": "Optimized Dalvik Executable"
+  },
+  {
+    "id": 24,
+    "question": "What is register-based?",
+    "a": "Simple Virtual Machine",
+    "b": "Java Virtual Machine",
+    "c": "Dalvik Virtual Machine",
+    "d": "C Virtual Machine",
+    "key": "Dalvik Virtual Machine"
+  },
+  {
+    "id": 25,
+    "question": "What is ART?",
+    "a": "Android Runtime",
+    "b": "Antenna Repeater",
+    "c": "Android Repeater",
+    "d": "Antenna Replaceable",
+    "key": "Android Runtime"
+  },
+  {
+    "id": 26,
+    "question": "What language is Android built on?",
+    "a": "C++",
+    "b": "Ubuntu",
+    "c": "Java",
+    "d": "Python",
+    "key": "Java"
+  },
+  {
+    "id": 27,
+    "question": "What is APK?",
+    "a": "Android Programming Kernel",
+    "b": "Android Package Kit",
+    "c": "Android Programming Kit",
+    "d": "Application Package Kit",
+    "key": "Android Package Kit"
+  },
+  {
+    "id": 28,
+    "question": "How the files APK can be compiled?",
+    "a": "XML",
+    "b": "Android Studio",
+    "c": "Browser",
+    "d": "None",
+    "key": "Android Studio"
+  },
+  {
+    "id": 29,
+    "question": "What is XML?",
+    "a": "Extensible Manifest Location",
+    "b": "Extensible Markup Language",
+    "c": "Enhanced Manifest Language",
+    "d": "Enhanced Markup Locomotive",
+    "key": "Extensible Markup Language"
+  },
+  {
+    "id": 30,
+    "question": "In __________, XMLs utilized in implementing data related to UI?",
+    "a": "DOS",
+    "b": "Android",
+    "c": "Microsoft Windows",
+    "d": "Ubuntu",
+    "key": "Android"
+  },
+  {
+    "id": 31,
+    "question": "What does not make the layout look heavy?",
+    "a": "XML",
+    "b": "Android Studio",
+    "c": "Browser",
+    "d": "None",
+    "key": "XML"
+  },
+  {
+    "id": 32,
+    "question": "Manifest XML in Androids have ____________?",
+    "a": "Layouts Information",
+    "b": "Applications Information",
+    "c": "Activities Information",
+    "d": "All Mentioned Above",
+    "key": "Applications Information"
+  },
+  {
+    "id": 33,
+    "question": "What shares the information among applications in Android?",
+    "a": "XML",
+    "b": "Android Studio",
+    "c": "Content Provider",
+    "d": "Virtual Machines",
+    "key": "Content Provider"
+  },
+  {
+    "id": 34,
+    "question": "Mini activity in Android is referred to as ________?",
+    "a": "Activity",
+    "b": "Adapter",
+    "c": "File",
+    "d": "Fragment",
+    "key": "Fragment"
+  },
+  {
+    "id": 35,
+    "question": "What are the various types of Fragments?",
+    "a": "Single Frame Fragments",
+    "b": "List Fragments",
+    "c": "Fragments Transaction",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 36,
+    "question": "Which fragments are utilized for hand-held devices?",
+    "a": "Single Frame Fragments",
+    "b": "List Fragments",
+    "c": "Fragments Transaction",
+    "d": "All Mentioned Above",
+    "key": "Single Frame Fragments"
+  },
+  {
+    "id": 37,
+    "question": "Fragments with a special view as list format is referred to as ___________?",
+    "a": "Single Frame Fragments",
+    "b": "List Fragments",
+    "c": "Fragments Transaction",
+    "d": "All Mentioned Above",
+    "key": "List Fragments"
+  },
+  {
+    "id": 38,
+    "question": "What is moving from one fragment to another?",
+    "a": "Single Frame Fragments",
+    "b": "List Fragments",
+    "c": "Fragments Transaction",
+    "d": "All Mentioned Above",
+    "key": "Fragments Transaction"
+  },
+  {
+    "id": 39,
+    "question": "What handles the interaction of users to the screen of smartphones?",
+    "a": "Services",
+    "b": "Activities",
+    "c": "Broadcast Receivers",
+    "d": "Content Provider",
+    "key": "Activities"
+  },
+  {
+    "id": 40,
+    "question": "What handles background application processing?",
+    "a": "Services",
+    "b": "Activities",
+    "c": "Broadcast Receivers",
+    "d": "Content Provider",
+    "key": "Services"
+  },
+  {
+    "id": 41,
+    "question": "What is the purpose of Broadcast Receivers in Android?",
+    "a": "To Handle User Interaction",
+    "b": "To Handle Background Processing",
+    "c": "To Handle Communication",
+    "d": "To Handle Data",
+    "key": "To Handle Communication"
+  },
+  {
+    "id": 42,
+    "question": "What handles issues of managing databases?",
+    "a": "Services",
+    "b": "Activities",
+    "c": "Broadcast Receivers",
+    "d": "Content Provider",
+    "key": "Content Provider"
+  },
+  {
+    "id": 43,
+    "question": "Actions on screen performed are known as __________?",
+    "a": "Services",
+    "b": "Activities",
+    "c": "Broadcast Receivers",
+    "d": "Content Provider",
+    "key": "Activities"
+  },
+  {
+    "id": 44,
+    "question": "What responds to the broadcasting messages obtained from various applications?",
+    "a": "Services",
+    "b": "Activities",
+    "c": "Broadcast Receivers",
+    "d": "Content Provider",
+    "key": "Broadcast Receivers"
+  },
+  {
+    "id": 45,
+    "question": "What represents the UIs portion in any Activity?",
+    "a": "Fragments",
+    "b": "Views",
+    "c": "Layouts",
+    "d": "Intents",
+    "key": "Fragments"
+  },
+  {
+    "id": 46,
+    "question": "What responds to the inputs of a user?",
+    "a": "Fragments",
+    "b": "Views",
+    "c": "Layouts",
+    "d": "Intents",
+    "key": "Views"
+  },
+  {
+    "id": 47,
+    "question": "A formatted label of text is displayed by ___________?",
+    "a": "Text View",
+    "b": "Button",
+    "c": "Image View",
+    "d": "Edit Text",
+    "key": "Text View"
+  },
+  {
+    "id": 48,
+    "question": "What is the critical section in Android development?",
+    "a": "Fragments",
+    "b": "Views",
+    "c": "Layouts",
+    "d": "Intents",
+    "key": "Views"
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of Image view?",
+    "a": "Display Formatted Text Label",
+    "b": "Display an Image Resource",
+    "c": "Displays a Clickable Image",
+    "d": "Performs Action",
+    "key": "Display an Image Resource"
+  },
+  {
+    "id": 50,
+    "question": "What is clicked to perform actions?",
+    "a": "Text View",
+    "b": "Button",
+    "c": "Image View",
+    "d": "Edit Text",
+    "key": "Button"
+  },
+  {
+    "id": 51,
+    "question": "What displays an image in Android?",
+    "a": "Text View",
+    "b": "Image Button",
+    "c": "Image View",
+    "d": "Edit Text",
+    "key": "Image Button"
+  },
+  {
+    "id": 52,
+    "question": "What contains various items?",
+    "a": "List View",
+    "b": "Button",
+    "c": "Image View",
+    "d": "Edit Text",
+    "key": "List View"
+  },
+  {
+    "id": 53,
+    "question": "Where a user can insert input?",
+    "a": "Text View",
+    "b": "Button",
+    "c": "Image View",
+    "d": "Edit Text",
+    "key": "Edit Text"
+  },
+  {
+    "id": 54,
+    "question": "What views the hierarchies to control the format of the screen?",
+    "a": "Fragments",
+    "b": "Views",
+    "c": "Layouts",
+    "d": "Intents",
+    "key": "Layouts"
+  },
+  {
+    "id": 55,
+    "question": "What wires the components?",
+    "a": "Fragments",
+    "b": "Views",
+    "c": "Layouts",
+    "d": "Intents",
+    "key": "Intents"
+  },
+  {
+    "id": 56,
+    "question": "What are the resources in Android?",
+    "a": "Strings",
+    "b": "Drawable Pictures",
+    "c": "Constants",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 57,
+    "question": "What is the file for application configuration?",
+    "a": "Fragments",
+    "b": "Manifest",
+    "c": "Layouts",
+    "d": "Intents",
+    "key": "Manifest"
+  },
+  {
+    "id": 58,
+    "question": "How the activities in the Android are killed?",
+    "a": "finish() Method",
+    "b": "finish activity (int request code)",
+    "c": "a & b",
+    "d": "Close()",
+    "key": "a & b"
+  },
+  {
+    "id": 59,
+    "question": "What is ADB in Android?",
+    "a": "Android Debug Bridge",
+    "b": "Application Data Bridge",
+    "c": "Application Delete Broadcast",
+    "d": "Automated Delete Broadcast",
+    "key": "Android Debug Bridge"
+  },
+  {
+    "id": 60,
+    "question": "What does ADB facilitate?",
+    "a": "Installing Apps",
+    "b": "Debugging Apps",
+    "c": "a & b",
+    "d": "None",
+    "key": "a & b"
+  },
+  {
+    "id": 61,
+    "question": "What controls the Android devices from computers?",
+    "a": "ADB",
+    "b": "AVD",
+    "c": "XML",
+    "d": "Manifest",
+    "key": "ADB"
+  },
+  {
+    "id": 62,
+    "question": "What does the folder of src contain in Android?",
+    "a": "C Files",
+    "b": "Java Files",
+    "c": "C++ Files",
+    "d": "XML",
+    "key": "Java Files"
+  },
+  {
+    "id": 63,
+    "question": "What is AVD in Android?",
+    "a": "Active Visible Display",
+    "b": "Android Virtual Display",
+    "c": "Android Visible Device",
+    "d": "Android Virtual Device",
+    "key": "Android Virtual Device"
+  },
+  {
+    "id": 64,
+    "question": "Android Emulator that runs the OS of Android in the VMs referred to as ________?",
+    "a": "ADB",
+    "b": "AVD",
+    "c": "XML",
+    "d": "Manifest",
+    "key": "AVD"
+  },
+  {
+    "id": 65,
+    "question": "What is the purpose of an AVDs manager in Android?",
+    "a": "Create AVDs",
+    "b": "Manage AVDs",
+    "c": "Delete AVDs",
+    "d": "a & b",
+    "key": "a & b"
+  },
+  {
+    "id": 66,
+    "question": "What is stored in AVD?",
+    "a": "Device User Data",
+    "b": "Installed Apps & Settings",
+    "c": "Emulated SD Card",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 67,
+    "question": "Error in Android is shown in __________?",
+    "a": "ADB",
+    "b": "CPU",
+    "c": "Logcat",
+    "d": "Memory",
+    "key": "Logcat"
+  },
+  {
+    "id": 68,
+    "question": "What is the cat in Logcat?",
+    "a": "Concatenate",
+    "b": "Content",
+    "c": "Communicate",
+    "d": "Category",
+    "key": "Concatenate"
+  },
+  {
+    "id": 69,
+    "question": "How many layers are present in the architecture of Android?",
+    "a": "Five",
+    "b": "Four",
+    "c": "Three",
+    "d": "Two",
+    "key": "Four"
+  },
+  {
+    "id": 70,
+    "question": "What is the top layer in the architecture of Android?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Application Framework"
+  },
+  {
+    "id": 71,
+    "question": "Pre-installed applications are located in _________?",
+    "a": "Application",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Application"
+  },
+  {
+    "id": 72,
+    "question": "What are the services included in the Application Framework?",
+    "a": "Activity Manager",
+    "b": "Notification Manager",
+    "c": "Package Manager",
+    "d": "All Mentioned Above",
+    "key": "All Mentioned Above"
+  },
+  {
+    "id": 73,
+    "question": "What is the important segment of Androids architecture?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Android Runtime"
+  },
+  {
+    "id": 74,
+    "question": "Dalvik virtual Machine is present in ____________?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Android Runtime"
+  },
+  {
+    "id": 75,
+    "question": "What supports Android for running various instances efficiently?",
+    "a": "JVM",
+    "b": "DVM",
+    "c": "Compiler",
+    "d": "Emulator",
+    "key": "DVM"
+  },
+  {
+    "id": 76,
+    "question": "DVMs are based upon ___________ for threading?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Linux Kernel"
+  },
+  {
+    "id": 77,
+    "question": "Which layer is known as the heart of Androids architecture?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Linux Kernel"
+  },
+  {
+    "id": 78,
+    "question": "What provides a layer of abstraction amid the hardware of the device and the remaining components?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Linux Kernel"
+  },
+  {
+    "id": 79,
+    "question": "What handles security among applications & systems?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Linux Kernel"
+  },
+  {
+    "id": 80,
+    "question": "What allocates the resources to process based on their needs?",
+    "a": "Application Framework",
+    "b": "Linux Kernel",
+    "c": "Libraries",
+    "d": "Android Runtime",
+    "key": "Linux Kernel"
+  },
+  {
+    "id": 81,
+    "question": "What provides the access to resources that are \u00e2\u20ac\u02dcnon-code embedded\u00e2\u20ac\u2122?",
+    "a": "Activity Manager",
+    "b": "Notification Manager",
+    "c": "Package Manager",
+    "d": "Resource Manager",
+    "key": "Resource Manager"
+  },
+  {
+    "id": 82,
+    "question": "What is the database i.e., built-in Android?",
+    "a": "Oracle",
+    "b": "MySQL",
+    "c": "SQLite",
+    "d": "All Mentioned Above",
+    "key": "SQLite"
+  },
+  {
+    "id": 83,
+    "question": "What is SSL?",
+    "a": "Secure Sockets Layer",
+    "b": "Secure Synchronization Layer",
+    "c": "Service Socket Layer",
+    "d": "Service Synchronization Layer",
+    "key": "Secure Sockets Layer"
+  },
+  {
+    "id": 84,
+    "question": "In which year \u00e2\u20ac\u02dcOpen Handset Alliance\u00e2\u20ac\u2122 is announced?",
+    "a": "2007",
+    "b": "2006",
+    "c": "2005",
+    "d": "2004",
+    "key": "2007"
+  },
+  {
+    "id": 85,
+    "question": "Doughnut is the version of _______?",
+    "a": "DOS",
+    "b": "Android",
+    "c": "Microsoft Windows",
+    "d": "Ubuntu",
+    "key": "Android"
+  },
+  {
+    "id": 86,
+    "question": "Who is the developer of color OS?",
+    "a": "Vivo",
+    "b": "Oppo",
+    "c": "Honor",
+    "d": "Amazon",
+    "key": "Oppo"
+  },
+  {
+    "id": 87,
+    "question": "What is the OS developed by Vivo?",
+    "a": "Color OS",
+    "b": "Origin OS",
+    "c": "Magic UI",
+    "d": "Fire OS",
+    "key": "Origin OS"
+  },
+  {
+    "id": 88,
+    "question": "Magic UI is developed by _____________?",
+    "a": "Vivo",
+    "b": "Oppo",
+    "c": "Honor",
+    "d": "Amazon",
+    "key": "Honor"
+  },
+  {
+    "id": 89,
+    "question": "Battery life in iPhones is of low quality compared to ___________?",
+    "a": "DOS",
+    "b": "Android",
+    "c": "Microsoft Windows",
+    "d": "Ubuntu",
+    "key": "Android"
+  },
+  {
+    "id": 90,
+    "question": "Apple devices ensure more security compared to ____________ devices?",
+    "a": "DOS",
+    "b": "Android",
+    "c": "Microsoft Windows",
+    "d": "Ubuntu",
+    "key": "Android"
+  },
+  {
+    "id": 91,
+    "question": "Fire OS is the Android developed by __________?",
+    "a": "Vivo",
+    "b": "Oppo",
+    "c": "Honor",
+    "d": "Amazon",
+    "key": "Amazon"
+  },
+  {
+    "id": 92,
+    "question": "Android was released under ___________?",
+    "a": "Sourceforge",
+    "b": "Apache",
+    "c": "OSS",
+    "d": "None",
+    "key": "Apache"
+  },
+  {
+    "id": 93,
+    "question": "Android is for ___________?",
+    "a": "Mobile Phones",
+    "b": "PCs",
+    "c": "Laptops",
+    "d": "Servers",
+    "key": "Mobile Phones"
+  },
+  {
+    "id": 94,
+    "question": "First mobile device with OS as Android is _____________?",
+    "a": "Google Phone",
+    "b": "T-Mobile G1",
+    "c": "HTC",
+    "d": "Honor",
+    "key": "T-Mobile G1"
+  },
+  {
+    "id": 95,
+    "question": "How to stop services in Android?",
+    "a": "stopSelf()",
+    "b": "stopService()",
+    "c": "a & b",
+    "d": "Exit()",
+    "key": "a & b"
+  },
+  {
+    "id": 96,
+    "question": "What is AAPT in Android?",
+    "a": "Android Act Presentation Tool",
+    "b": "Android Application Presentation Text",
+    "c": "Android Asset Packaging Tool",
+    "d": "Application Asset Prevention Tool",
+    "key": "Android Asset Packaging Tool"
+  },
+  {
+    "id": 97,
+    "question": "What is OHA?",
+    "a": "Open Health Alliance",
+    "b": "Open Handset Alliance",
+    "c": "Oriented Health Application",
+    "d": "Open Handset Application",
+    "key": "Open Handset Alliance"
+  },
+  {
+    "id": 98,
+    "question": "What does NDK stand for?",
+    "a": "Native Distinct Knowledge",
+    "b": "Native Development Kit",
+    "c": "New Design Kit",
+    "d": "Native Detecting Knowledge",
+    "key": "Native Development Kit"
+  },
+  {
+    "id": 99,
+    "question": "Nine-patch image tool purpose in Android is __________________?",
+    "a": "Image Extension Tool",
+    "b": "Change Bitmap Images into Nine Sections",
+    "c": "Image Conversion Tool",
+    "d": "All Mentioned Above",
+    "key": "Change Bitmap Images into Nine Sections"
+  },
+  {
+    "id": 100,
+    "question": "What is GCM?",
+    "a": "Google Count Message",
+    "b": "Google Cloud Messaging",
+    "c": "Great Center Manifest",
+    "d": "Google Center Manifestation",
+    "key": "Google Cloud Messaging"
+  }
+]
