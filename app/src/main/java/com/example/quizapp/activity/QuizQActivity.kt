@@ -11,9 +11,13 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.quizapp.R
 import com.example.quizapp.databinding.ActivityQuizQactivityBinding
 import com.example.quizapp.viewmodel.QuiqViewModel
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.lang.reflect.Type
 
 class QuizQActivity : AppCompatActivity() {
     lateinit var binding: ActivityQuizQactivityBinding
@@ -23,29 +27,62 @@ class QuizQActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityQuizQactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel = ViewModelProvider(
-            this,
-            ViewModelProvider.AndroidViewModelFactory.getInstance(application)
-        ).get(QuiqViewModel::class.java)
+        viewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(QuiqViewModel::class.java)
 
-        viewModel.getJsonData()
-        Log.d("hero2", viewModel.ListOf10Mcq.size.toString())
-        updateQuestion()
+
+
+        val data=getSharedPreferences("My_Satting", MODE_PRIVATE)
+        val qNo=data.getInt("currentNo",0)
+        Log.d("hello","question number value $qNo")
+        if(qNo>0 && qNo!=11){
+            askResume(this)
+        }else{
+            viewModel.generateUniqueRandomNumbers()
+            viewModel.getJsonData(viewModel.generateUniqueRandomNumbers())
+            updateQuestion()
+        }
+//        if (qNo>0){
+//            userOldQuiz()
+//
+//            Log.e("hello",viewModel.range.toString())
+//            Log.e("hello",viewModel.question_no.toString())
+//            Log.e("hello",viewModel.ListOfUserAns.toString())
+//
+//        }else{
+//            viewModel.generateUniqueRandomNumbers()
+//            viewModel.getJsonData(viewModel.generateUniqueRandomNumbers())
+//            userOldQuiz()
+//            updateQuestion()
+//        }
+
+
+//
+
         binding.NextBtn.setOnClickListener {
 
             val temp = radioBtnHandle()
-            if (temp) {
+            if (temp)
                 updateQuestion()
 
                 binding.radioGroup.clearCheck()
-            } else {
-                Toast.makeText(this, "Please Select Answer ", Toast.LENGTH_SHORT).show()
-            }
+//            } else {
+//                Toast.makeText(this, "Please Select Answer ", Toast.LENGTH_SHORT).show()
+//            }
 
         }
         timer()
 
 
+    }
+
+
+
+    override fun onStop() {
+        super.onStop()
+        if (viewModel.question_no>1) {
+            Log.e("hello","save data call success fully")
+            saveData()
+        }
     }
 
     override fun onBackPressed() {
@@ -144,13 +181,69 @@ class QuizQActivity : AppCompatActivity() {
         }
         builder.create().show()
     }
+    fun askResume(context: Context) {
+        val builder = AlertDialog.Builder(context)
+        builder.setTitle("Restart Old Quiz")
+        builder.setMessage("are you want to resume the previous quiz?")
+        // Set affirmative and negative buttons
+        builder.setPositiveButton("No") { dialog, _ ->
+            dialog.dismiss()
+            viewModel.generateUniqueRandomNumbers()
+            viewModel.getJsonData(viewModel.generateUniqueRandomNumbers())
+            updateQuestion()
+             // Properly exit the app
+        }
+        builder.setNegativeButton("yes") { dialog, _ ->
+            dialog.dismiss()
 
 
+            userOldQuiz()
+            updateQuestion()
+        }
+        builder.create().show()
+    }
 
-    fun saveData(){
-        val editor=getSharedPreferences("My_Satting", MODE_PRIVATE).edit()
-        editor.putString("userAns",viewModel.ListOfUserAns.toString())
-        editor.putString("mcq_question",viewModel.ListOf10Mcq.toString())
+
+    fun saveData() {
+        val gson=Gson()
+        val jsonString = gson.toJson(viewModel.range)
+        val jsonUserAns=gson.toJson(viewModel.ListOfUserAns)
+        val editor = getSharedPreferences("My_Satting", MODE_PRIVATE).edit()
+        editor.putInt("currentNo",viewModel.question_no)
+        editor.putString("userAns",jsonUserAns)
+        editor.putString("range",jsonString)
+
         editor.apply()
     }
+
+    fun userOldQuiz() {
+        val data = getSharedPreferences("My_Satting", MODE_PRIVATE)
+        val qNo = data.getInt("currentNo", 0)
+        val userAns = data.getString("userAns", null)
+        val range = data.getString("range", null)
+        val gson = Gson()
+        val rangeArray =
+            gson.fromJson<ArrayList<Int>>(range, object : TypeToken<ArrayList<Int>>() {}.type)
+        val userAnsArray = gson.fromJson<ArrayList<String>>(userAns,
+            object : TypeToken<ArrayList<String>>() {}.type)
+
+        try {
+            viewModel.question_no = qNo - 1
+            viewModel.ListOfUserAns = userAnsArray
+            viewModel.range = rangeArray
+            viewModel.getJsonData(viewModel.range)
+            Log.d("hello",userAnsArray.toString())
+            Log.d("hello",rangeArray.toString())
+            Log.d("hello",qNo.toString())
+
+        } catch (e: Exception) {
+
+        Log.d("hello", e.message.toString())
+    }
+
+
+    }
+
+
+
 }

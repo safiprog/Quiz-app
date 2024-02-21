@@ -21,7 +21,9 @@ class ResultActivity : AppCompatActivity() {
         val intent = intent
         val userAnswers = intent.getSerializableExtra("userans") as ArrayList<*>
         val questionList = intent.getSerializableExtra("mcq") as ArrayList<mcqlistItem>
-
+        val editor = getSharedPreferences("My_Satting", MODE_PRIVATE).edit()
+        editor.clear()
+        editor.apply()
         updateUi(userAnswers,questionList)
         binding.restartQ.setOnClickListener {
             val intent=Intent(this,QuizQActivity::class.java)

@@ -12,8 +12,9 @@ class QuiqViewModel(application: Application) :AndroidViewModel(application) {
     val appContext = getApplication<Application>().applicationContext
 
     var question_no=0;
-    val ListOf10Mcq=ArrayList<mcqlistItem>()
-    val ListOfUserAns=ArrayList<String>()
+    var ListOf10Mcq=ArrayList<mcqlistItem>()
+    var ListOfUserAns=ArrayList<String>()
+    var range=ArrayList<Int>()
 
     fun generateUniqueRandomNumbers(): ArrayList<Int> {
         val uniqueNumbersSet = mutableSetOf<Int>()
@@ -24,13 +25,13 @@ class QuiqViewModel(application: Application) :AndroidViewModel(application) {
             val randomNumber = random.nextInt(100)
             uniqueNumbersSet.add(randomNumber)
         }
-
+        range=ArrayList(uniqueNumbersSet)
         return ArrayList(uniqueNumbersSet)
     }
 
-     fun getJsonData() {
+     fun getJsonData(range:ArrayList<Int>) {
+
         val items = JsonUtils.getItemsFromJson(appContext, "output.json")
-        val range=generateUniqueRandomNumbers()
          for (index in range){
              ListOf10Mcq.add(items[index])
          }
